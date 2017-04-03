@@ -1,0 +1,19 @@
+proj_env: 'development'
+
+development:
+  publish_queue: 'pypubsub'
+  publish_wait_timeout: 2
+
+  pypubsub:
+      topic: dev_topic
+
+  kafka:
+
+test:
+  publish_queue: 'pypubsub'
+  publish_wait_timeout: 2
+
+  pypubsub:
+      topic: test_topic
+
+  kafka:
